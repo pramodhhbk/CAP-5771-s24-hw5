@@ -54,11 +54,11 @@ def question2():
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    answers['(c) Weight update'] = '1/2 * math.log((1-p)/p)'
+    answers['(c) Weight update'] = '0.5 * math.log((1-p)/p)'
 
     # type: float
     # the answer should be correct to 3 significant digits
-    answers['(d) Weight influence'] = 1.528
+    answers['(d) Weight influence'] = 1.527
     return answers
 
 
@@ -79,7 +79,7 @@ def question4():
     answers = {}
 
     # type: bool
-    answers['(a) e=0.5, independent'] = True
+    answers['(a) e=0.5, independent'] = False
 
     # type: bool
     answers['(b), independent'] = True
@@ -176,13 +176,13 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = "(p*100)/(p*1000)"
+    answers['(a) precision for C0'] = "1/10"
 
     # type: eval_float
     answers['(a) recall for C0'] = "p"
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = "(0.2*p)/(0.1+p)"
+    answers['(b) F-measure of C0'] = "(2*p/10) / (p + 1/10)"
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
