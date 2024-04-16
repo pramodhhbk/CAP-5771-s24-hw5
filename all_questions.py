@@ -133,14 +133,14 @@ def question6():
     answers['(b) C2 better classifier than C1?'] = 'no'
 
     # type: explain_string
-    answers['(b) C2 better classifier than C1? Explain'] = 
+    answers['(b) C2 better classifier than C1? Explain'] = "Both fall on random guess line in ROC curve."
 
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
     answers['(c) Which metric?'] = 'TPR/FPR'
 
     # type: explain_string
-    answers['(c) explain'] = None
+    answers['(c) explain'] = "Precision and recall metrics favor Classifier C2 for its higher recall, yet they fail to account for false positives. In contrast, true positive rate (TPR) and false positive rate (FPR) provide a more balanced assessment, acknowledging Classifier C2's superior recall alongside its potential for increased false positives. This makes them more appropriate for evaluating relative performance in contexts where false positives carry significant weight."
     return answers
 
 
